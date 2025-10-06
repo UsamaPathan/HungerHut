@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation | HungerHut</title>
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="assets/images/fav-icon/fav-icon.svg" type="image/x-icon" />
+    <!-- faremwork of css -->
+    <link rel="stylesheet" href="assets/css/bootstrap-lib/bootstrap.min.css" />
+    <!-- style sheet of css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Responsive sheet of css -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- fonts awsome icon link  -->
+    <link rel="stylesheet" href="assets/font-awesome-lib/icon/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- swiper-slider link css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- animation of css -->
+    <link rel="stylesheet" href="assets/css/aos.css" />
+</head>
+
+<body>
+    <!-- ======== 1.0. Header Section ======== -->
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-md">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <!-- site logo -->
+                    <div>
+                        <a class="nav-logo" href="index.html">
+                            <figure data-aos="zoom-in" data-aos-duration="400" data-aos-delay="200">
+                                <img src="assets/images/index/hungerhut.svg" alt="logo" />
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="d-flex justify-content-center align-items-center gap-4">
+                            <li>
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="our-menu.html">Our Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">Blog</a>
+                            </li>
+                            <li class="dropdown position-relative">
+                                <a class="nav-link active" href="#">Pages <i
+                                        class="fa-sharp fa-solid fa-sort-down"></i></a>
+                                <ul class="position-absolute dropdown-menu gap-2">
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center"
+                                            href="contact.html">Contact</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center" href="team.html">Our Team</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center active"
+                                            href="reservation.html">Reservation</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center" href="blogdetail.html">Blog
+                                            Details</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center"
+                                            href="testimonial.html">Testimonial</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center"
+                                            href="gallery.html">Gallery</a>
+                                    </li>
+                                    <li><a class="dropdown-item d-flex align-items-center" href="404.html">404</a></li>
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center" href="coming.html">Coming
+                                            Soon</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#" class="d-none d-md-flex hover1">
+                            <p>Book Now</p>
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center gap-0 gap-sm-1">
+                        <a href="#" class="icon-link d-block d-md-none" aria-label="Aside Navigation">
+                            <i class="fa-solid fa-bars open-aside" onclick="open_aside()"></i>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <hr>
+        </div>
+        <!--===== aside navigation slidebar =====-->
+        <aside>
+            <div id="mySidenav" class="right-sidbar">
+                <div class="side-nav-logo d-flex justify-content-between align-items-center ps-2 pe-1 nav-logo">
+                    <figure class="navbar-brand">
+                        <a href="index.html"><img src="assets/images/index/hungerhut.svg" alt="logo"></a>
+                    </figure>
+                    <button class="fa-solid fa-xmark" onclick="close_aside()" aria-label="Toggle Button"></button>
+                </div>
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="our-menu.html">Our Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="nav-link active" href="#">Pages <i class="fa-sharp fa-solid fa-sort-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="team.html">Our Team</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="blogdetail.html">Blog Details</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center active"
+                                    href="reservation.html">Reservation</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="testimonial.html">Testimonial</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="gallery.html">Gallery</a>
+                            </li>
+                            <li><a class="dropdown-item" href="404.html">404</a></li>
+                            <li>
+                                <a class="dropdown-item" href="coming.html">Coming Soon</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </header>
+    <!-- ======== End of  1.0. Header Section ========  -->
+    <!-- ======== 1.1. Reservation-Banner Section ========  -->
+    <section class="Banner">
+        <div class="d-flex align-items-center justify-content-center justify-content-sm-center position-relative">
+            <div class="d-flex flex-column justify-content-center justify-content-md-center align-items-center gap-3">
+                <div>
+                    <h2>Reservation</h2>
+                </div>
+                <div class="d-flex align-items-center justify-content-center justify-content-lg-center text-center">
+                    <p>
+                        el pharetra vel turpis nunc eget lorem dolor sed. In egestas
+                        erat imperdiet sed el pharetra
+                    </p>
+                </div>
+            </div>
+            <figure class="position-absolute" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="300">
+                <img src="assets/images/about-us/hero-banner.png" alt="" />
+            </figure>
+        </div>
+    </section>
+    <!-- ======== End of  1.1. Reservation-Banner Section ========  -->
+    <!-- ======= 1.2. Reservation-Reservation Section ======= -->
+    <section class="Reservation">
+        <div class="container">
+            <div class="d-flex flex-column justify-content-lg-start position-relative gap-5">
+                <div class="d-flex flex-column gap-5">
+                    <div class="d-flex flex-column justify-content-center align-items-center gap-3">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <h2>Book Your Reservation <span>Today</span></h2>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center gap-3 w-100">
+                            <hr>
+                            <div>
+                                <h5>Reservation</h5>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <form action="#" id="contactForm" class="px-5">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <div class="row g-3">
+                                    <div class="col-lg-4 col-md-4 col-12">
+                                        <input type="text" class="form-control" placeholder="Full Name" required />
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-12">
+                                        <input type="tel" name="phone" pattern="[0-9]{11}" class="form-control"
+                                            placeholder="Phone Number" required />
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-12">
+                                        <select class="form-select" required>
+                                            <option value="" selected disabled hidden>
+                                                1 People
+                                            </option>
+                                            <option>1 People</option>
+                                            <option>2 People</option>
+                                            <option>3 People</option>
+                                            <option>4 People</option>
+                                            <option>5+ People</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-12">
+                                        <input type="date" class="form-control" required />
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-12">
+                                        <select class="form-select" required>
+                                            <option value="" selected disabled hidden>
+                                                8:00 : PM
+                                            </option>
+                                            <option>8:00 PM</option>
+                                            <option>9:00 AM</option>
+                                            <option>10:00 AM</option>
+                                            <option>12:00 PM</option>
+                                            <option>2:00 PM</option>
+                                            <option>5:00 PM</option>
+                                            <option>7:00 PM</option>
+                                            <option>9:00 PM</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4">
+                                        <button type="submit" class="hover1">
+                                            <p>Book Now</p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="popup" class="position-fixed">
+                            <div class="justify-content-center justify-content-sm-center">
+                                <p>Submitted Successfully!</p>
+                                <button class="hover1 justify-content-center align-items-center">
+                                    <p>OK </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======= End of 1.2. Reservation Section ======= -->
+    <!-- =======1.3. Reservation-Mission Section ======= -->
+    <section class="Mission">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-lg-5 col-md-6 col-12">
+                    <div class="d-flex flex-column justify-content-center justify-content-sm-center">
+                        <div class="d-flex flex-column gap-3">
+                            <div class="d-flex justify-content-lg-start justify-content-start align-items-start">
+                                <h2>Beyond The Boundaries <span>Of Taste.</span></h2>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center justify-content-lg-center">
+                                <div
+                                    class="d-flex justify-content-md-start justify-content-start align-items-center gap-2">
+                                    <hr>
+                                    <div>
+                                        <h5>Why Choose Us</h5>
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div class="d-flex justify-content-sm-start justify-content-start align-items-start">
+                                    <p>
+                                        Ipsam esse debitis dolor neque eum pariatur quia semper
+                                        totam! Aliquet eaque, montes nostrud, ipsam integer.
+                                        Sagittis suspendisse cillum dolor! Est euismod
+                                        beatae.Ipsam esse debitis dolor neque eum pariatur quia
+                                        semper totam
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center justify-content-md-center">
+                            <div class="d-flex align-items-center gap-3">
+                                <i class="fa-solid fa-arrow-right"></i>
+                                <h6>Fresh Products</h6>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <i class="fa-solid fa-arrow-right"></i>
+                                <h6>Professional & Skilled Chefs</h6>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <i class="fa-solid fa-arrow-right"></i>
+                                <h6>Best Offer & Low Cost Bar</h6>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <i class="fa-solid fa-arrow-right"></i>
+                                <h6>Vegan Cuisine</h6>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <i class="fa-solid fa-arrow-right"></i>
+                                <h6>Online Delivery Shop</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6 col-12">
+                    <div class="d-flex justify-content-end align-items-center position-relative">
+                        <figure>
+                            <img src="assets/images/about-us/whychoose2.webp" alt="Why-Choose" />
+                        </figure>
+                        <div class="d-flex flex-column position-absolute">
+                            <div class="d-flex flex-column gap-3">
+                                <div>
+                                    <h4>Mission</h4>
+                                </div>
+                                <div>
+                                    <p>
+                                        Ipsam esse debitis dolor neque eum pariatur quia semper
+                                        totam! Aliquet
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======= End of 1.3. Reservation-Mission Section ======= -->
+    <!-- ====== 1.4. FAQ Section ======= -->
+    <section class="Faq">
+        <div class="container" style="max-width: 800px;">
+            <div class="d-flex flex-column gap-5">
+                <div class="d-flex flex-column gap-3">
+                    <h2 class="text-center">Frequently <span>Asked</span> Questions</h2>
+                    <div class="d-flex justify-content-center align-items-center gap-2">
+                        <hr>
+                        <div>
+                            <h5>General faqs</h5>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+                <div class="d-flex flex-column gap-4">
+                    <div class="d-flex flex-column justify-content-between">
+                        <button class="d-flex justify-content-start justify-content-lg-start">
+                            Is your restaurant child-friendly?
+                            <i class="fa-solid fa-circle-chevron-down ms-auto"></i>
+                        </button>
+                        <div class="d-flex justify-content-start align-items-start align-items-lg-start">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                                penatibus et magnis.Lorem ipsum dolor sit amet,
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-between">
+                        <button class="d-flex justify-content-start justify-content-lg-start">
+                            How long has your restaurant been around?
+                            <i class="fa-solid fa-circle-chevron-down ms-auto"></i>
+                        </button>
+                        <div class="d-flex justify-content-start align-items-start align-items-lg-start">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                                penatibus et magnis.Lorem ipsum dolor sit amet,
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-between">
+                        <button class="d-flex justify-content-start justify-content-lg-start">
+                            Can I reserve a table for next month?
+                            <i class="fa-solid fa-circle-chevron-down ms-auto"></i>
+                        </button>
+                        <div class="d-flex justify-content-start align-items-start align-items-lg-start">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                                penatibus et magnis.Lorem ipsum dolor sit amet,
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-between">
+                        <button class="d-flex justify-content-start justify-content-lg-start">
+                            Can I make a special request for my meal?
+                            <i class="fa-solid fa-circle-chevron-down ms-auto"></i>
+                        </button>
+                        <div class="d-flex justify-content-start align-items-start align-items-lg-start">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                                penatibus et magnis.Lorem ipsum dolor sit amet,
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-between">
+                        <button class="d-flex justify-content-start justify-content-lg-start">
+                            What Kinds of Payment Do You Accept?
+                            <i class="fa-solid fa-circle-chevron-down ms-auto"></i>
+                        </button>
+                        <div class="d-flex justify-content-start align-items-start align-items-lg-start">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                                penatibus et magnis.Lorem ipsum dolor sit amet,
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======= End of 1.4. FAQ Section ======= -->
+    <!-- ======= 1.5. Resrvation-Footer Section ======= -->
+    <footer>
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-4 col-12 ">
+                    <div class="d-flex flex-column gap-4 gap-sm-2">
+                        <div>
+                            <h4>Newsletters</h4>
+                        </div>
+                        <div class="d-flex flex-column gap-3">
+                            <div>
+                                <p>Ipsam esse debitis dolor neque</p>
+                            </div>
+                            <input type="text" placeholder="Enter Your Email" class="form-control" />
+                            <div>
+                                <a href="" class="hover1">
+                                    <p>Subscribe </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-6 col-6">
+                    <div class="d-flex flex-column gap-4 gap-sm-2">
+                        <div>
+                            <h4>About Us</h4>
+                        </div>
+                        <div class="d-flex flex-column gap-3">
+                            <div>
+                                <a href="team.html">
+                                    <p>Our Chef</p>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <p>Reservation</p>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="blog.html">
+                                    <p>Blog</p>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="contact.html">
+                                    <p>Contact Us</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-6 col-6">
+                    <div class="d-flex flex-column gap-4 gap-sm-2">
+                        <div class="d-flex flex-column gap-2">
+                            <div>
+                                <h4>Contact Us</h4>
+                            </div>
+                            <div>
+                                <h5>Phone</h5>
+                            </div>
+                            <div>
+                                <p>+123456789013</p>
+                            </div>
+                            <div>
+                                <h5>Email</h5>
+                            </div>
+                            <div>
+                                <p>name@email.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="d-flex flex-column gap-4 gap-sm-2">
+                        <div class="d-flex flex-column gap-2">
+                            <div>
+                                <h4>Opening Hours</h4>
+                            </div>
+                            <div>
+                                <p>Saturday from 9am to 4pm</p>
+                            </div>
+                            <div>
+                                <p>Sunday from 9am to 4pm</p>
+                            </div>
+                            <div>
+                                <p>Mon – Fri from 8am to 9pm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-center justify-content-lg-center gap-4">
+            <hr>
+            <div class="d-flex ">
+                <span class="d-flex align-items-center align-items-md-center">Hunger</span>
+                <figure><img src="assets/images/index/CUSTOM-group_1_.svg" alt="Burger"></figure>
+                <Span>Hut</Span>
+            </div>
+            <hr>
+        </div>
+        <div
+            class="d-flex flex-md-row flex-sm-column justify-content-between align-items-center justify-content-center gap-3">
+            <div>
+                <p>Copyright © 2025 HungerHut by Evonicmedia</p>
+            </div>
+            <div>
+                <p>All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- ======= End of 1.5. Resrvation-Footer Section ======= -->
+    <!-- bootstrap min javascript  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- j Query -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- swiper slider js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- main javascript -->
+    <script src="assets/js/custom.js"></script>
+    <!-- animation from javascript -->
+    <script src="assets/js/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 1500,
+        });
+    </script>
+</body>

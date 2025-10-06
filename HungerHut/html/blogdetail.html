@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlogDetails-HungerHut</title>
+  <!-- favicon  -->
+  <link rel="shortcut icon" href="assets/images/fav-icon/fav-icon.svg" type="image/x-icon" />
+  <!-- faremwork of css -->
+  <link rel="stylesheet" href="assets/css/bootstrap-lib/bootstrap.min.css" />
+  <!-- style sheet of css -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Responsive sheet of css -->
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+  <!-- fonts awsome icon link  -->
+  <link rel="stylesheet" href="assets/font-awesome-lib/icon/all.min.css" />
+  <!-- slick-slider link css -->
+  <link rel="stylesheet" href="assets/css/slick.min.css" />
+  <!-- animation of css -->
+  <link rel="stylesheet" href="assets/css/aos.css" />
+</head>
+
+<body>
+  <div class="site-wrapper">
+    <!-- ======== 1.0. Header Section ======== -->
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-md">
+          <div class="d-flex justify-content-between align-items-center w-100">
+            <!-- site logo -->
+            <div>
+              <a class="nav-logo" href="index.html">
+                <figure data-aos="zoom-in" data-aos-duration="400" data-aos-delay="200">
+                  <img src="assets/images/index/hungerhut.svg" alt="logo" />
+                </figure>
+              </a>
+            </div>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+              <ul class="d-flex justify-content-center align-items-center gap-4">
+                <li>
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="our-menu.html">Our Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="dropdown position-relative">
+                  <a class="nav-link active" href="#">Pages <i class="fa-sharp fa-solid fa-sort-down"></i></a>
+                  <ul class="position-absolute dropdown-menu gap-2">
+                    <li>
+                      <a class="dropdown-item d-flex align-items-center" href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item d-flex align-items-center" href="team.html">Our Team</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item d-flex align-items-center" href="reservation.html">Reservation</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item d-flex align-items-center active" href="blogdetail.html">Blog Details</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item d-flex align-items-center" href="testimonial.html">Testimonial</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item d-flex align-items-center" href="gallery.html">Gallery</a>
+                    </li>
+                    <li><a class="dropdown-item d-flex align-items-center" href="404.html">404</a></li>
+                    <li>
+                      <a class="dropdown-item d-flex align-items-center" href="coming.html">Coming Soon</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="#" class="d-none d-md-flex hover1">
+                <p>Book Now</p>
+              </a>
+            </div>
+            <div class="d-flex align-items-center gap-0 gap-sm-1">
+              <a href="#" class="icon-link d-block d-md-none" aria-label="Aside Navigation">
+                <i class="fa-solid fa-bars open-aside" onclick="open_aside()"></i>
+              </a>
+            </div>
+          </div>
+        </nav>
+        <hr>
+      </div>
+      <!--===== aside navigation slidebar =====-->
+      <aside>
+        <div id="mySidenav" class="right-sidbar">
+          <div class="side-nav-logo d-flex justify-content-between align-items-center ps-2 pe-1 nav-logo">
+            <figure class="navbar-brand">
+              <a href="index.html"><img src="assets/images/index/hungerhut.svg" alt="logo"></a>
+            </figure>
+            <button class="fa-solid fa-xmark" onclick="close_aside()" aria-label="Toggle Button"></button>
+          </div>
+          <ul>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="our-menu.html">Our Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="dropdown">
+              <a class="nav-link active" href="#">Pages <i class="fa-sharp fa-solid fa-sort-down"></i></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="team.html">Our Team</a>
+                </li>
+                <li>
+                  <a class="dropdown-item active" href="blogdetail.html">Blog Details</a>
+                </li>
+                <li>
+                  <a class="dropdown-item d-flex align-items-center" href="reservation.html">Reservation</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="testimonial.html">Testimonial</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="gallery.html">Gallery</a>
+                </li>
+                <li><a class="dropdown-item" href="404.html">404</a></li>
+                <li>
+                  <a class="dropdown-item" href="coming.html">Coming Soon</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </header>
+    <!-- ======== End of  1.0. Header Section ========  -->
+    <!-- ======== 1.1.blogdetail-Banner Section ========  -->
+    <section class="BlogDetails-Banner">
+      <div class="d-flex align-items-center justify-content-center justify-content-sm-center position-relative">
+        <div class="d-flex justify-content-center align-items-center gap-3">
+          <div class="d-flex flex-column justify-content-center justify-content-lg-center text-center">
+            <h2>Restaurant Trends What Hot And What Not</h2>
+          </div>
+        </div>
+        <figure class="position-absolute" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="300">
+          <img src="assets/images/about-us/hero-banner.png" alt="" />
+        </figure>
+      </div>
+    </section>
+    <!-- ======== End of  1.1. blog-details-Banner Section ========  -->
+    <!-- ======== 1.2. Our-Blog  Section ========  -->
+    <section class="Our-Blog">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-8 col-md-6 col-12">
+            <div class="d-flex flex-column justify-content-start gap-3">
+              <figure>
+                <img src="assets/images/blog-details/BlogDetails.webp" alt="Blogs">
+              </figure>
+              <div class="d-flex justify-content-center justify-content-lg-center">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                  laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                  ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor
+                  in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis
+                  at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue
+                  duis dolore.</p>
+              </div>
+              <div class="d-flex flex-column gap-3">
+                <div>
+                  <h4>Food is the foundation of true happiness and health.</h4>
+                </div>
+                <div class="d-flex justify-content-center justify-content-lg-center">
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                    ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+                    tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat</p>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center justify-content-md-center align-items-center">
+                <div class="d-flex justify-content-center align-items-center align-items-lg-center ">
+                  <h5>Every day, the burden appointed to it. But the load will be too heavy for us if we carry
+                    yesterday’s burden</h5>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center justify-content-lg-center">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                  laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                  ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor
+                  in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis
+                  at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue
+                  duis dolore.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="d-flex flex-column justify-content-lg-start">
+              <div class="d-flex justify-content-center justify-content-sm-start align-items-center">
+                <div class="d-flex flex-column align-items-center text-center justify-content-md-start">
+                  <figure>
+                    <img src="assets/images/blog-details/David1.webp" alt="David">
+                  </figure>
+                  <div class="d-flex flex-column align-items-center justify-content-md-start">
+                    <div>
+                      <h5>David Maq</h5>
+                    </div>
+                    <div class="text-center">
+                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    </div>
+                    <div class="d-flex justify-content-start  gap-3">
+                      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                      <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="d-flex justify-content-start justify-content-sm-start align-items-center align-items-md-center ">
+                <div class="d-flex flex-column justify-content-lg-start">
+                  <div>
+                    <h4>Popular Category</h4>
+                  </div>
+                  <div class="d-flex flex-column justify-content-md-start">
+                    <div class="d-flex align-items-center  gap-3"><i class="fa-solid fa-arrow-right"></i>
+                      <div>
+                        <h6>Dining Food</h6>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center  gap-3"><i class="fa-solid fa-arrow-right"></i>
+                      <div>
+                        <h6>Restaurant</h6>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center  gap-3"><i class="fa-solid fa-arrow-right"></i>
+                      <div>
+                        <h6>Food & Travel</h6>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center  gap-3"><i class="fa-solid fa-arrow-right"></i>
+                      <div>
+                        <h6>Best Cuisines</h6>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center  gap-3"><i class="fa-solid fa-arrow-right"></i>
+                      <div>
+                        <h6>Sea Fish Fry</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-sm-start">
+                <div class="d-flex flex-column justify-content-md-start ">
+                  <div>
+                    <h4>Popular Tags</h4>
+                  </div>
+                  <div class="d-flex flex-column  gap-3 ">
+                    <div class="d-flex gap-3 flex-md-wrap">
+                      <div class="d-flex justify-content-center align-items-center align-items-sm-center">
+                        <h6>Burger</h6>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-center align-items-sm-center">
+                        <h6>Coffee</h6>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-center align-items-sm-center">
+                        <h6>Milk</h6>
+                      </div>
+                    </div>
+                    <div class="d-flex gap-3 flex-md-wrap">
+                      <div class="d-flex justify-content-center align-items-center align-items-sm-center">
+                        <h6>Pasta</h6>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-center align-items-sm-center">
+                        <h6>Organic</h6>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-center align-items-sm-center">
+                        <h6>Sea Fish</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======== End of  1.2. Our-Blog Section ========  -->
+    <!-- ======== 1.3. Reply Section ========  -->
+    <section class="Reply">
+      <div class="container">
+        <div class="d-flex flex-column gap-5">
+          <div class="d-flex flex-column gap-3">
+            <div>
+              <h2>Leave A Reply</h2>
+            </div>
+            <div>
+              <p>Your email address will not be published. Required fields are marked *</p>
+            </div>
+          </div>
+          <div class="d-flex flex-column gap-5">
+            <div>
+              <label for="commentbox" class="form-label">
+                <p>Comment</p>
+              </label>
+              <textarea name="commentbox" id="commentbox" rows="5"
+                class="form-control justify-content-lg-center"></textarea>
+            </div>
+            <div class="d-flex  justify-content-sm-start gap-4">
+              <div class="d-flex flex-column gap-2">
+                <label for="name" class="form-label">
+                  <p>Name</p>
+                </label>
+                <textarea name="name" id="name" rows="1" class="form-control  justify-content-md-center"></textarea>
+              </div>
+              <div class="d-flex flex-column gap-2">
+                <label for="email" class="form-label">
+                  <p>Your Email</p>
+                </label>
+                <textarea name="email" id="email" rows="1" class="form-control  justify-content-md-center"></textarea>
+              </div>
+              <div class="d-flex flex-column gap-2">
+                <label for="website" class="form-label">
+                  <p>Website</p>
+                </label>
+                <textarea name="website" id="website" rows="1"
+                  class="form-control  justify-content-md-center"></textarea>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="hover1">
+            <p>Post Comment</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ======== 1.3. Reply Section ========  -->
+    <!-- ======= 1.4. BlogDetail-Footer Section ======= -->
+    <footer>
+      <div class="container">
+        <div class="row ">
+          <div class="col-md-4 col-12 ">
+            <div class="d-flex flex-column gap-4 gap-sm-2">
+              <div>
+                <h4>Newsletters</h4>
+              </div>
+              <div class="d-flex flex-column gap-3">
+                <div>
+                  <p>Ipsam esse debitis dolor neque</p>
+                </div>
+                <input type="text" placeholder="Enter Your Email" class="form-control" />
+                <div>
+                  <a href="" class="hover1">
+                    <p>Subscribe</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6 col-6">
+            <div class="d-flex flex-column gap-4 gap-sm-2">
+              <div>
+                <h4>About Us</h4>
+              </div>
+              <div class="d-flex flex-column gap-3">
+                <div>
+                  <a href="team.html">
+                    <p>Our Chef</p>
+                  </a>
+                </div>
+                <div>
+                  <a href="#">
+                    <p>Reservation</p>
+                  </a>
+                </div>
+                <div>
+                  <a href="blog.html">
+                    <p>Blog</p>
+                  </a>
+                </div>
+                <div>
+                  <a href="contact.html">
+                    <p>Contact Us</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6 col-6">
+            <div class="d-flex flex-column gap-4 gap-sm-2">
+              <div class="d-flex flex-column gap-2">
+                <div>
+                  <h4>Contact Us</h4>
+                </div>
+                <div>
+                  <h5>Phone</h5>
+                </div>
+                <div>
+                  <p>+123456789013</p>
+                </div>
+                <div>
+                  <h5>Email</h5>
+                </div>
+                <div>
+                  <p>name@email.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12">
+            <div class="d-flex flex-column gap-4 gap-sm-2">
+              <div class="d-flex flex-column gap-2">
+                <div>
+                  <h4>Opening Hours</h4>
+                </div>
+                <div>
+                  <p>Saturday from 9am to 4pm</p>
+                </div>
+                <div>
+                  <p>Sunday from 9am to 4pm</p>
+                </div>
+                <div>
+                  <p>Mon – Fri from 8am to 9pm</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex align-items-center justify-content-center justify-content-lg-center gap-4">
+        <hr>
+        <div class="d-flex ">
+          <span class="d-flex align-items-center align-items-md-center">Hunger</span>
+          <figure><img src="assets/images/index/CUSTOM-group_1_.svg" alt="Burger"></figure>
+          <Span>Hut</Span>
+        </div>
+        <hr>
+      </div>
+      <div
+        class="d-flex flex-md-row flex-sm-column justify-content-between align-items-center justify-content-center gap-3">
+        <div>
+          <p>Copyright © 2025 HungerHut by Evonicmedia</p>
+        </div>
+        <div>
+          <p>All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- ======= End of 1.4. BlogDetail-Footer Section ======= -->
+  </div>
+
+  <!-- bootstrap min javascript  -->
+  <script src="assets/js/javascript-lib/bootstrap.min.js"></script>
+  <!-- j Query -->
+  <script src="assets/js/jquery.js"></script>
+  <!-- slick slider js -->
+  <script src="assets/js/slick.min.js"></script>
+  <!-- main javascript -->
+  <script src="assets/js/custom.js"></script>
+  <!-- animation from javascript -->
+  <script src="assets/js/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1500,
+    });
+  </script>
+</body>
+
+</html>

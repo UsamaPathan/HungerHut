@@ -1,0 +1,975 @@
+/* ===== 02. Global Style ===== */
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  h1 {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  h2 {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 30px;
+    text-decoration: none;
+  }
+
+  h4 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  h5 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  h6 {
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: auto;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: auto;
+  }
+  .hover1 {
+    font-size: 14px;
+    padding: 8px 22px;
+    width: 121px;
+  }
+
+  i {
+    font-size: 18px;
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  h2 {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  h4 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  h5 {
+    font-weight: 600;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+  }
+
+  Button {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .hover1 {
+    width: 297px;
+    padding: 8px 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding-left: 15px;
+  }
+  h1 {
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  h2 {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+  }
+
+  h4 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  h5 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  h6 {
+    font-size: 14px;
+    line-height: auto;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: auto;
+  }
+  .hover1 {
+     width: 297px;
+  }
+}
+
+/* ===== End of 02. Global Style ===== */
+/* ========= 1.0. Header Section ========= */
+@media screen and (max-width: 991px) {
+  header .navbar {
+    padding: 15px 0px;
+  }
+
+  header .open-aside {
+    display: block;
+    margin: 0px 5px;
+  }
+
+  header .nav-logo figure {
+    width: 75%;
+  }
+
+  header .nav-logo img {
+    width: 100%;
+  }
+
+  header .dropdown ul li a {
+    height: 30px;
+  }
+
+  header .side-nav-logo {
+    padding-bottom: 20px;
+  }
+
+  header .navbar-expand-lg .navbar-collapse {
+    justify-content: center;
+  }
+
+  header .navbar ul li a {
+    color: #05000b;
+    padding: 0;
+  }
+
+  .navbar-expand-md .nav-link {
+    padding: 0;
+  }
+
+  header .navbar .navbar-collapse .dropdown li {
+    padding-left: 6px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header .nav-logo img {
+    width: 110px;
+  }
+
+  header .navbar {
+    padding: 15px 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .icon-link i {
+    margin-right: 0;
+  }
+
+  header .nav-logo img {
+    width: 110px;
+  }
+
+  header aside .fa-xmark {
+    font-size: 20px;
+  }
+
+  header .open-aside {
+    padding: 6px 8px;
+    font-size: 22px;
+  }
+}
+
+/* ========= End of 1.0. Header Section ========= */
+/* ========= 1.1. Hero Section ========= */
+@media only screen and (max-width: 1200px) {
+  .Hero .position-relative.gap-4 .align-items-start.justify-content-center {
+    top: 9%;
+    right: -20%;
+  }
+  .Hero .position-relative.gap-4 .align-items-start.justify-content-center img {
+    width: 90%;
+  }
+  .Hero .align-items-end p {
+    width: 52%;
+  }
+
+  .Hero .justify-content-md-end p {
+    width: 100%;
+  }
+
+  .Hero .justify-content-md-start img {
+    width: 85%;
+  }
+  .Hero .justify-content-end hr {
+    margin-left: 6px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .Hero {
+    padding: 70px 0;
+  }
+
+  .Hero .gap-4 .justify-content-md-start {
+    width: 95%;
+  }
+
+  .Hero .position-relative hr {
+    margin-top: 16px;
+  }
+
+  .Hero .justify-content-end hr {
+    margin-top: 16px;
+  }
+  .Hero .align-items-lg-start {
+    gap: 16px;
+  }
+  .Hero .align-items-end p {
+    width: 53%;
+  }
+
+  .Hero .justify-content-md-end p {
+    width: 100%;
+  }
+  .Hero .justify-content-md-end {
+    gap: 24px;
+  }
+  .Hero .justify-content-md-end .flex-column {
+    padding-left: 0;
+  }
+
+  .Hero .justify-content-md-end img {
+    width: 100%;
+  }
+
+  .Hero .gap-2 hr {
+    width: 41%;
+  }
+  .Hero .position-relative.gap-4 .align-items-start.justify-content-center img {
+    width: 60%;
+  }
+  .Hero .position-relative.gap-4 .align-items-start.justify-content-center {
+    top: 21%;
+    right: -38%;
+  }
+  .Hero .justify-content-md-end {
+    gap: 24px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .Hero {
+    padding: 50px 0;
+  }
+  .Hero .justify-content-md-end img {
+    width: 50%;
+  }
+  .Hero .position-relative.gap-4 .align-items-start.justify-content-center {
+    top: 100%;
+    right: 50%;
+    width: 50%;
+  }
+  .Hero .position-relative.gap-4 .align-items-start.justify-content-center Img {
+    width: 100%;
+  }
+
+  .Hero .gap-4 .justify-content-md-start {
+    width: 85%;
+  }
+
+  .Hero .justify-content-md-end p {
+    width: 60%;
+  }
+  .Hero .align-items-end p,
+  .Hero .justify-content-md-end p {
+    width: 77%;
+  }
+
+  .Hero .gap-2 hr {
+    width: 37%;
+  }
+  .Hero hr {
+    width: 39%;
+  }
+}
+@media only screen and (max-width:480px){
+  .Hero .gap-4 .justify-content-md-start {
+        width: 100%;
+    }
+    .Hero .position-relative.gap-4 .align-items-start.justify-content-center {
+        width: 61%;
+    }
+    .Hero .align-items-end p, .Hero .justify-content-md-end p {
+        width: 100%;
+    }
+    .Hero .gap-2 hr {
+    width: 33%;
+  }
+}
+/* ======= End of 1.1. Hero Section =======*/
+/*-- ======= 1.2. About Section ======= --*/
+@media only screen and (max-width: 1200px) {
+  .About .align-items-md-center {
+    gap: 24px;
+  }
+  .About .position-relative p {
+    width: 83%;
+  }
+  .About .justify-content-lg-start {
+    width: 100%;
+  }
+  .About .justify-content-sm-start {
+    width: 83%;
+  }
+  .About .position-relative .position-absolute {
+    left: 85%;
+    top: 77%;
+  }
+  .About .align-items-sm-start {
+    width: 97%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .About .position-relative .position-absolute {
+    top: 80%;
+  }
+  .About .position-relative .position-absolute img {
+    width: 90%;
+  }
+  .About .position-relative p {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .About .justify-content-md-start {
+    width: 87%;
+  }
+  .About .position-relative {
+    padding-left: 10px;
+  }
+  .About .position-relative p {
+    width: 80%;
+  }
+
+  .About .position-relative .position-absolute {
+    top: 81%;
+    left: 65%;
+  }
+}
+@media only screen and (max-width:480px){
+  .About .justify-content-md-start {
+        width: 100%;
+    }
+        .About .position-relative p {
+        width: 100%;
+    }
+        .About .position-relative .position-absolute {
+        top: 91%;
+        left: 71%;
+    }
+}
+
+/*-- ======= End of 1.2. About Section ======= --*/
+/*-- ======= 1.3. Categories Section ======= --*/
+@media only screen and (max-width: 1200px) {
+  .Categories h4 {
+    font-size: 20px;
+  }
+
+  .Categories .text-center {
+    padding: 16px 0;
+  }
+  .Categories img[alt="Chicken-Leg"] {
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .Categories {
+    padding: 70px 0;
+  }
+
+  .Categories .align-items-md-center {
+    gap: 16px;
+  }
+
+  .Categories h4 span {
+    display: none;
+  }
+
+  .Categories img[alt="Chicken-Leg"] {
+    width: 31px;
+    height: 31px;
+  }
+
+  .Categories img[alt="Fish"] {
+    width: 30px;
+    height: 30px;
+  }
+
+  .Categories img[alt="Appetizer"] {
+    width: 31px;
+    height: 31px;
+  }
+
+  .Categories img[alt="Desert"] {
+    width: 37px;
+    height: 30px;
+  }
+
+  .Categories img[alt="Drink"] {
+    width: 18px;
+    height: 31px;
+    padding-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .Categories {
+    padding: 50px 0;
+  }
+
+  .Categories .align-items-md-center {
+    flex-direction: column;
+  }
+  .Categories hr {
+    width: 8%;
+  }
+  .Categories .text-center {
+    width: 95%;
+  }
+}
+
+/*-- ======= End of  1.3. Categories Section ======= --*/
+/*-- ======= 1.4. Dish ======= --*/
+
+@media screen and (max-width: 1200px) {
+  .Dish .align-items-lg-start {
+    width: 85%;
+  }
+  .Dish .align-items-md-start {
+    width: 87%;
+  }
+  .Dish .justify-content-sm-center {
+    height: 64%;
+  }
+  .Dish .justify-content-md-center .position-absolute {
+    top: 65%;
+    left: 45%;
+  }
+  .Dish .justify-content-md-center .position-absolute img {
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .Dish .align-items-lg-start {
+    width: 78%;
+  }
+  .Dish .align-items-md-start {
+    width: 84%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .Dish .align-items-md-center img {
+    width: 100%;
+  }
+  .Dish .align-items-lg-start {
+    width: 70%;
+  }
+
+  .Dish .align-items-md-start {
+    width: 100%;
+  }
+  .Dish .justify-content-md-center .position-absolute {
+    left: 52%;
+    top: 62%;
+  }
+  .Dish .hover1 {
+    width: 52%;
+  }
+  .Dish .align-items-sm-start {
+    width: 100%;
+    padding-left: 20px;
+  }
+  .Dish .justify-content-sm-end {
+    width: 78%;
+  }
+  .Dish .justify-content-sm-end .position-absolute {
+    top: 7%;
+    width: 100%;
+    left: 14%;
+  }
+}
+@media only screen and (max-width:480px){
+  .Dish .align-items-lg-start {
+        width: 100%;
+    }
+}
+
+/*-- ======= End of 1.4. Dish ======= --*/
+/*-- ======= 1.5. Gallery Section ======= --*/
+@media only screen and (max-width: 992px) {
+  .Gallery {
+    padding: 70px 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .Gallery {
+    padding: 50px 0;
+  }
+  .Gallery .d-grid {
+    display: flex !important;
+    flex-direction: column;
+  }
+}
+/*-- ======= End of 1.5. Gallery Section ======= --*/
+/*-- ======= 1.6. Menu Section -- ====== */
+@media only screen and (max-width: 992px) {
+  .Menu .text-center {
+    padding: 30px 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .Menu .text-center {
+    padding: 18px 0;
+  }
+}
+
+/*-- ======= 1.7. Brands Section =======--*/
+@media only screen and (max-width: 768px) {
+  .Brands {
+    padding: 50px 0;
+  }
+}
+
+/*-- ======= End of 1.7. Brands Section =======--*/
+/*-- ======= 1.8. Feedback Section ======= --*/
+@media only screen and (max-width: 1200px) {
+  .Feedback .border {
+    padding-top: 16px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .Feedback .justify-content-md-start {
+    width: 93%;
+  }
+  .Feedback .align-items-lg-start p {
+    width: 100%;
+  }
+  .Feedback .align-items-end,
+  .Feedback .align-items-end img {
+    height: 100%;
+  }
+  .Feedback .gap-5 {
+    gap: 24px !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .Feedback {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+  }
+  .Feedback .border {
+    padding: 16px 0;
+  }
+  .Feedback .justify-content-lg-center {
+    width: 73%;
+  }
+
+  .Feedback .justify-content-md-start {
+    width: 80%;
+  }
+}
+
+/*-- ======= 1.8. End of Feedback Section ======= --*/
+/*-- ======= 1.9. Blog Section ======= --*/
+@media only screen and (max-width: 1200px) {
+  .Blog .justify-content-md-start {
+    gap: 20px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .Blog {
+    padding: 70px 0;
+  }
+  .Blog .align-items-lg-start {
+    gap: 2px;
+  }
+  .Blog .justify-content-md-start {
+    gap: 12px;
+  }
+  .Blog .align-items-lg-start h5 {
+    font-size: 12px;
+  }
+
+  .Blog .gap-5 .flex-column .align-items-lg-center {
+    padding: 1rem 0 0 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .Blog {
+    padding: 50px 0;
+  }
+  .Blog .gap-5 {
+    flex-direction: column;
+  }
+  .Blog .align-items-lg-start h5 {
+    font-size: 20px;
+  }
+  .Blog .hover1 {
+    width: 100%;
+  }
+}
+
+/*-- ======= 1.9. End of Blog Section ======= --*/
+/* -- ======1.11 Footer Section ====== --*/
+@media only screen and (max-width: 1200px) {
+  footer .hover1 {
+    width: 100%;
+  }
+  footer .form-control {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  footer .flex-md-row {
+    flex-direction: column;
+  }
+}
+
+/* -- ======1.11 Footer Section ====== --*/
+/*-- ======= 1.1. About-Hero Section Start -- =======*/
+@media only screen and (max-width: 992px) {
+  .Banner .position-relative .position-absolute {
+    top: 55%;
+    left: 50%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .Banner .position-relative .position-absolute img {
+    width: 75%;
+  }
+  .Banner .position-relative .position-absolute {
+    top: 60%;
+    left: 50%;
+  }
+}
+/*-- ======= End of 1.1. About-Hero Section Start -- =======*/
+/*-- ====== 1.4. About-Mission Section -- ======*/
+@media only screen and (max-width: 1200px) {
+  .Mission .justify-content-lg-start {
+    width: 100%;
+  }
+  .Mission .position-relative .position-absolute {
+    width: 56%;
+    left: -9%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .Mission {
+    padding: 70px 0;
+  }
+  .Mission .justify-content-sm-center {
+    gap: 16px;
+    padding: 0;
+  }
+  .Mission .justify-content-lg-center {
+    gap: 16px;
+  }
+  .Mission .justify-content-sm-start {
+    width: 100%;
+  }
+  .Mission .justify-content-md-center {
+    gap: 8px;
+  }
+  .Mission .position-relative .position-absolute {
+    width: 79%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .Mission {
+    padding: 50px 0;
+  }
+  .Mission .position-relative .position-absolute {
+    width: 100%;
+    left: 0;
+  }
+}
+/*-- ====== End of 1.4. About-Mission Section -- ======*/
+/* -- ======= 1.6. About-Team Section ======= -- */
+@media only screen and (max-width: 1200px) {
+  .About-Team .justify-content-md-start {
+    width: 100%;
+  }
+  .About-Team .position-absolute {
+  height: 80%;
+}
+.About-Team .align-items-sm-start
+ {
+    padding-top: 0px;
+}
+}
+@media only screen and (max-width: 992px) {
+  .About-Team {
+    padding: 70px 0;
+  }
+  .About-Team .col-lg-4 {
+    z-index: 999;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .About-Team {
+    padding: 50px 0;
+  }
+      .About-Team .position-absolute {
+        width: 100%;
+        height: 59%;
+        top: 33%;
+    }
+}
+/* -- ======= End of 1.6. About-Team Section ======= -- */
+
+/* -- ======= 1.1 Contact-Help Section -- ======= */
+@media only screen and (max-width: 1200px) {
+  .Help .justify-content-lg-center {
+    width: 61%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .Help {
+    padding: 50px 0;
+  }
+  .Help .justify-content-lg-center {
+    width: 89%;
+  }
+}
+/* -- ======= End of 1.1 Contact-Help Section -- ======= */
+/* -- ====== 1.0 Error Section Start -- ======= */
+@media only screen and (max-width:1400px){
+  .Error-Section h1,.Error-Section h2 {
+font-size: 150px;
+line-height: 140.9px;
+}
+.Error-Section h3 {
+    font-size: 74.82px; 
+}
+.Error-Section .justify-content-lg-center{
+  gap: 16px;
+}
+}
+@media only screen and (max-width:1200px){
+    .Error-Section h1,.Error-Section h2 {
+font-size: 115px;
+line-height: 110.9px;
+}
+.Error-Section h3 {
+    font-size: 74px; 
+    line-height: 100px;
+}
+.Error-Section .justify-content-lg-center{
+  gap: 8px;
+}
+
+}
+@media only screen and (max-width:992px){
+.Error-Section h1,.Error-Section h2 {
+    font-size: 90px;
+    line-height: 88px;
+}
+.Error-Section h3 {
+    font-size: 44px; 
+    line-height: 80px;
+}
+}
+@media only screen and (max-width:480px){
+  .Error-Section h1, .Error-Section h2
+ {
+    font-size: 82px;
+  }
+  .Error-Section h3 {
+    font-size: 30px;
+   
+}
+}
+/* -- ====== End of 1.0 Error Section -- ======= */
+/* -- ====== 1.0 Coming-Soon Section -- ======= */
+@media only screen and (max-width:1440px){
+  .Coming-Soon h1 {
+    font-size: 126px;
+    line-height: 163px;
+}
+}
+
+@media only screen and (max-width:1400px){
+   .Coming-Soon h1 {
+    font-size: 104px;
+     line-height: 150px;
+}
+}
+@media only screen and (max-width:1200px){
+   .Coming-Soon h1 {
+    font-size: 85px;
+     line-height: 120px;
+}
+}
+@media only screen and (max-width:992px){
+  .Coming-Soon {
+    padding: 10px 0;
+  }
+      .Coming-Soon h1 {
+        font-size: 60px;
+        line-height: 65px;
+    }
+    .Coming-Soon .justify-content-md-start{
+  width: 94%;
+}
+.Coming-Soon hr {
+    width: 8%;
+}
+}
+/* -- ====== End of 1.0 Coming-Soon Section -- ======= */
+/* -- ====== 1.2. Chefs Section-- ======*/
+@media only screen and (max-width:1200px){
+  .Our-Chefs .justify-content-lg-start {
+    width: 100%;
+}
+.Our-Chefs .justify-content-md-center{
+  gap: 6px;
+}
+}
+@media only screen and (max-width:992px){
+  .Our-Chefs .justify-content-lg-center
+ {
+    width: 98%;
+}
+}
+@media only screen and (max-width:767px){
+  .Our-Chefs {
+    padding: 20px 0;
+  }
+  .Our-Chefs .justify-content-sm-center{
+    flex-direction: column;
+  }
+  .Our-Chefs .justify-content-lg-center {
+    width: 100%;
+}
+}
+/*-- ====== BlogDetails-Banner Section -- ====== */
+
+@media only screen and (max-width: 992px) {
+  .BlogDetails-Banner .position-relative .position-absolute {
+    top: 55%;
+    left: 50%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .BlogDetails-Banner{
+    padding: 50px 0;
+  }
+  .BlogDetails-Banner .position-relative .position-absolute img {
+    width: 75%;
+  }
+  .BlogDetails-Banner .position-relative .position-absolute {
+    top: 60%;
+    left: 50%;
+  }
+}
+/*-- ======= End of 1.1. BlogDetails-Banner Section -- =======*/
+/*-- ======= 1.2. Our-Blog Section -- ======*/
+@media only screen and (max-width:1200px){
+  .Our-Blog .justify-content-lg-start {
+  gap: 16px;
+}
+.Our-Blog .justify-content-md-start {
+  gap: 16px;
+}
+}
+@media only screen and (max-width:992px){
+ .Our-Blog .align-items-md-center .justify-content-lg-start{
+  gap: 24px;
+}
+.Our-Blog .justify-content-md-start {
+  gap: 8px;
+}
+}
+@media only screen and (max-width:480px){
+  .Our-Blog .flex-sm-wrap {
+    flex-wrap: wrap !important;
+  }
+}
+/*-- ======= eND OF 1.2. Our-Blog Section -- ======*/
+/*-- ====== 1.3. Reply Section -- ======*/
+@media only screen and (max-width:1200px){
+  .Reply .justify-content-md-center {
+  width: 220px;
+}
+}
+@media only screen and (max-width:992px){
+   .Reply .justify-content-md-center {
+  width: 190px;
+}
+}
+@media only screen and (max-width:767px){
+    .Reply .justify-content-sm-start {
+  flex-direction: column;
+}
+  .Reply .justify-content-md-center {
+  width: 100%;
+}
+.Reply .justify-content-lg-center{
+  width: 100%;
+}
+}
+/*-- ====== End of 1.3. Reply Section -- ======*/
